@@ -9,6 +9,7 @@ function updateCounter() {
 document.querySelectorAll('.btn').forEach(button => {
     button.addEventListener('click', updateCounter);
 });
+
 // Cambio de tema Batman/Bruce Wayne
 const themeSwitch = document.querySelector('.theme-switch__checkbox');
 const identityImg = document.getElementById('identity-img');
@@ -76,6 +77,7 @@ document.getElementById('settings-button').addEventListener('click', function() 
     techElements.forEach(el => {
         el.classList.toggle('bat-tech-active');
     });
+    //Tema de Batman al apretar el boton
     const techSound = new Audio('Batman_V2.mp3');
     techSound.play();
     updateCounter();
